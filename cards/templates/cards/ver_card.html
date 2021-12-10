@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{%block conteudo%}
+    <dl>
+        <dt>ID</dt>
+        <dd>{{ card.id }}</dd>
+
+        <dt>Nome</dt>
+        <dd>{{ card.nome }}</dd>
+
+        <dt>Nome em Inglês</dt>
+        <dd>{{ card.nome_ingles }}</dd>
+
+        <dt>Edição</dt>
+        <dd>{{ card.edicao }}</dd>
+
+        <dt>Cor</dt>
+        <dd>{{ card.cor }}</dd>
+
+        <dt>Tipo</dt>
+        <dd>{{ card.tipo }}</dd>
+
+        <dt>Raridade</dt>
+        <dd>{{ card.raridade }}</dd>
+    </dl>
+{%endblock%}

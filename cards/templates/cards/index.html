@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{%block conteudo%}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nome em Inglês</th>
+                <th>Edição</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for card in cards %}
+            <tr>
+                <td>
+                    <a href="{% url 'ver_card' card.id %}">{{ card.nome }}</a>
+                </td>
+                <td>{{ card.nome_ingles }}</td>
+                <td>{{ card.edicao }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{%endblock%}
